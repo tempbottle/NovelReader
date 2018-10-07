@@ -11,8 +11,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 import android.content.Context;
-import com.zqc.opencc.android.lib.ChineseConverter;
-import com.zqc.opencc.android.lib.ConversionType;
+//import com.zqc.opencc.android.lib.ChineseConverter;
+//import com.zqc.opencc.android.lib.ConversionType;
 
 import static com.example.newbiechen.ireader.model.local.ReadSettingManager.SHARED_READ_CONVERT_TYPE;
 
@@ -143,6 +143,7 @@ public class StringUtils {
     }
 
     //繁簡轉換
+    /*
     public static String convertCC(String input, Context context)
     {
         ConversionType currentConversionType = ConversionType.S2TWP;
@@ -185,5 +186,10 @@ public class StringUtils {
         }
 
         return (convertType != 0)?ChineseConverter.convert(input, currentConversionType, context):input;
+    }
+    */
+    public static String convertCC(String input, Context context)
+    {
+        return input;
     }
 }

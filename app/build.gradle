@@ -12,6 +12,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
     }
     buildTypes {
         release {
@@ -71,7 +74,7 @@ dependencies {
     testImplementation "junit:junit:$rootProject.junitVersion"
 
     // OpenCC to convert Simp. Chinese to Trad. Chinese
-    implementation 'com.zqc.opencc.android.lib:lib-opencc-android:0.8.0@aar'
+    //implementation 'com.zqc.opencc.android.lib:lib-opencc-android:0.8.0@aar'
 
     // AndroidTagGroup
     implementation 'me.gujun.android.taggroup:library:1.4@aar'
